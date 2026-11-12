@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop - Online Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+
+        <div class="logo">
+            <h2>MyShop<span>.</span></h2>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search products...">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+        </nav>
+
+        
+<!-- User & Cart -->
+<div class="nav-icons">
+
+    <a href="pages/login.html" class="login-btn">
+        <i class="fa-regular fa-user"></i>
+        Login
+    </a>
+
+    <a href="pages/register.html" class="register-nav-btn">
+        Register
+    </a>
+
+    <a href="pages/cart.html" class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>0</span>
+    </a>
+
+</div>
+
+        <!-- Mobile Menu -->
+        <button class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <p class="hero-tag">WELCOME TO MYSHOP</p>
+
+            <h1>Discover Your<br>
+            Favourite Products</h1>
+
+            <p class="hero-description">
+                Shop the latest products at amazing prices.
+                Find everything you need in one place.
+            </p>
+
+            <a href="#products" class="shop-btn">
+                Shop Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/hero.png" alt="Shopping products">
+        </div>
+
+    </section>
+
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+
+        <div class="section-heading">
+            <h2>Shop By Category</h2>
+            <p>Explore our popular categories</p>
+        </div>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+                <h3>Electronics</h3>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fa-solid fa-shirt"></i>
+                </div>
+                <h3>Fashion</h3>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fa-solid fa-shoe-prints"></i>
+                </div>
+                <h3>Shoes</h3>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <h3>Accessories</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Promotional Banner -->
+    <section class="offer-banner">
+
+        <div>
+            <p>LIMITED TIME OFFER</p>
+
+            <h2>Get Up To 50% OFF</h2>
+
+            <p>Grab your favourite products at amazing prices.</p>
+
+            <a href="#products" class="offer-btn">
+                Explore Now
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+
+        <div class="section-heading">
+            <h2>Our Latest Products</h2>
+            <p>Explore our amazing collection</p>
+        </div>
+
+        <!-- Product Filters -->
+        <div class="product-filters">
+
+            <button class="filter-btn active" data-category="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-category="electronics">
+                Electronics
+            </button>
+
+            <button class="filter-btn" data-category="fashion">
+                Fashion
+            </button>
+
+            <button class="filter-btn" data-category="shoes">
+                Shoes
+            </button>
+
+            <button class="filter-btn" data-category="accessories">
+                Accessories
+            </button>
+
+        </div>
+
+        <p id="no-products" style="display: none;">
+    No products found!
+</p>
+
+
+        <!-- Products Container -->
+        <div class="product-container" id="product-container">
+
+            <!-- Product 1 -->
+            <div class="product-card" data-category="electronics">
+
+                <div class="product-image">
+                    <img src="images/product1.png" alt="Headphones">
+                </div>
+
+                <div class="product-info">
+                    <h3>Wireless Headphones</h3>
+                    <p class="product-price">₹1,499</p>
+                    <button class="add-cart-btn">Add To Cart</button>
+                </div>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card" data-category="electronics">
+
+                <div class="product-image">
+                    <img src="images/product2.png" alt="Smart Watch">
+                </div>
+
+                <div class="product-info">
+                    <h3>Smart Watch</h3>
+                    <p class="product-price">₹2,499</p>
+                    <button class="add-cart-btn">Add To Cart</button>
+                </div>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <img src="images/product3.png" alt="T-Shirt">
+                </div>
+
+                <div class="product-info">
+                    <h3>Casual T-Shirt</h3>
+                    <p class="product-price">₹599</p>
+                    <button class="add-cart-btn">Add To Cart</button>
+                </div>
+
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <img src="images/product4.png" alt="Jacket">
+                </div>
+
+                <div class="product-info">
+                    <h3>Stylish Jacket</h3>
+                    <p class="product-price">₹1,999</p>
+                    <button class="add-cart-btn">Add To Cart</button>
+                </div>
+
+            </div>
+
+
+            <!-- Product 5 -->
+            <div class="product-card" data-category="shoes">
+
+                <div class="product-image">
+                    <img src="images/product5.png" alt="Sneakers">
+                </div>
+
+                <div class="product-info">
+                    <h3>Running Sneakers</h3>
+                    <p class="product-price">₹1,799</p>
+                    <button class="add-cart-btn">Add To Cart</button>
+                </div>
+
+            </div>
+
+
+            <!-- Product 6 -->
+            <div class="product-card" data-category="shoes">
+
+                <div class="product-image">
+                    <img src="images/product6.png" alt="Sports Shoes">
+                </div>
+
+                <div class="product-info">
+                    <h3>Sports Shoes</h3>
+                    <p class="product-price">₹2,199</p>
+                    <button class="add-cart-btn">Add To Cart</button>
+                </div>
+
+            </div>
+
+
+            <!-- Product 7 -->
+            <div class="product-card" data-category="accessories">
+
+                <div class="product-image">
+                    <img src="images/product7.png" alt="Backpack">
+                </div>
+
+                <div class="product-info">
+                    <h3>Premium Backpack</h3>
+                    <p class="product-price">₹999</p>
+                    <button class="add-cart-btn">Add To Cart</button>
+                </div>
+
+            </div>
+
+
+            <!-- Product 8 -->
+            <div class="product-card" data-category="accessories">
+
+                <div class="product-image">
+                    <img src="images/product8.png" alt="Sunglasses">
+                </div>
+
+                <div class="product-info">
+                    <h3>Stylish Sunglasses</h3>
+                    <p class="product-price">₹799</p>
+                    <button class="add-cart-btn">Add To Cart</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

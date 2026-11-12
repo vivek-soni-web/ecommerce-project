@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details - MyShop</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            <h2>MyShop<span>.</span></h2>
+        </div>
+
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#products">Products</a>
+            <a href="../index.html#categories">Categories</a>
+        </nav>
+
+        <div class="nav-icons">
+            <a href="login.html" class="login-btn">Login</a>
+
+            <a href="cart.html" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>0</span>
+            </a>
+        </div>
+
+    </header>
+
+
+    <!-- Product Details -->
+    <section class="product-details">
+
+        <div class="product-details-image">
+            <img src="../images/product1.png" alt="Wireless Headphones">
+        </div>
+
+        <div class="product-details-info">
+
+            <p>Electronics</p>
+
+            <h1>Wireless Headphones</h1>
+
+            <h2>₹1,499</h2>
+
+            <p>
+                Experience amazing sound quality with our
+                premium wireless headphones. Enjoy comfortable
+                listening and stylish design.
+            </p>
+
+            <p>⭐ ⭐ ⭐ ⭐ ⭐ (4.5/5)</p>
+
+            <label for="quantity">Quantity:</label>
+
+            <input type="number" id="quantity"
+            value="1" min="1" max="10">
+
+            <br><br>
+
+            <button class="add-cart-btn">
+                Add To Cart
+            </button>
+
+        </div>
+
+       </section>
+
+    <script src="../js/cart.js"></script>
+
+</body>
+</html>
