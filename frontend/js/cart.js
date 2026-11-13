@@ -261,11 +261,26 @@ function displayCart() {
 
     }).join("");
 
-    cartContainer.innerHTML += `
-        <h2>Total Amount: ₹${total.toLocaleString("en-IN")}</h2>
+    
+cartContainer.innerHTML += `
+    <h2>Total Amount: ₹${total.toLocaleString("en-IN")}</h2>
 
-        <a href="../index.html#products">Continue Shopping</a>
-    `;
+    <a href="../index.html#products">Continue Shopping</a>
+
+    <a href="checkout.html" style="
+        display: inline-block;
+        margin: 15px;
+        padding: 14px 26px;
+        background: #ff6b35;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+    ">
+        Proceed to Checkout
+    </a>
+`;
+
 
 }
 
